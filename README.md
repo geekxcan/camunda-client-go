@@ -1,12 +1,12 @@
 # Camunda REST API client for golang
-[![Go Report Card](https://goreportcard.com/badge/github.com/citilinkru/camunda-client-go)](https://goreportcard.com/report/github.com/citilinkru/camunda-client-go)
-[![codecov](https://codecov.io/gh/citilinkru/camunda-client-go/branch/master/graph/badge.svg?token=53NH949TQY)](https://codecov.io/gh/citilinkru/camunda-client-go)
-[![Go Reference](https://pkg.go.dev/badge/github.com/citilinkru/camunda-client-go.svg)](https://pkg.go.dev/github.com/citilinkru/camunda-client-go)
-[![Release](https://img.shields.io/github/release/citilinkru/camunda-client-go.svg?style=flat-square)](https://github.com/citilinkru/camunda-client-go/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/geekxcan/camunda-client-go)](https://goreportcard.com/report/github.com/geekxcan/camunda-client-go)
+[![codecov](https://codecov.io/gh/geekxcan/camunda-client-go/branch/master/graph/badge.svg?token=53NH949TQY)](https://codecov.io/gh/geekxcan/camunda-client-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/geekxcan/camunda-client-go.svg)](https://pkg.go.dev/github.com/geekxcan/camunda-client-go)
+[![Release](https://img.shields.io/github/release/geekxcan/camunda-client-go.svg?style=flat-square)](https://github.com/geekxcan/camunda-client-go/releases/latest)
 
 Installation
 -----------
-	go get github.com/citilinkru/camunda-client-go/v3
+	go get github.com/geekxcan/camunda-client-go/v3
 	
 Usage
 -----------
