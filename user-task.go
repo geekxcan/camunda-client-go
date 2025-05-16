@@ -364,6 +364,10 @@ type QueryUserTaskComplete struct {
 	Variables map[string]Variable `json:"variables"`
 }
 
+type AssigneeTaskUser struct {
+	UserId string `json:"userId"`
+}
+
 // MarshalJSON marshal to json
 func (q *UserTaskGetListQuery) MarshalJSON() ([]byte, error) {
 	type Alias UserTaskGetListQuery
@@ -477,6 +481,20 @@ func (t *userTaskApi) GetListCount(query *UserTaskGetListQuery) (int64, error) {
 // Complete complete user task by id
 func (t *userTaskApi) Complete(id string, query QueryUserTaskComplete) error {
 	res, err := t.client.doPostJson("/task/"+id+"/complete", map[string]string{}, query)
+	if err != nil {
+		return fmt.Errorf("can't post json: %w", err)
+	}
+
+	if res != nil {
+		res.Body.Close()
+	}
+
+	return nil
+}
+
+// Assignee task user
+func (t *userTaskApi) Assignee(id string, data AssigneeTaskUser) error {
+	res, err := t.client.doPostJson("/task/"+id+"/assignee", map[string]string{}, data)
 	if err != nil {
 		return fmt.Errorf("can't post json: %w", err)
 	}
